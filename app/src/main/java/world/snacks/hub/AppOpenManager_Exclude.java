@@ -89,8 +89,8 @@ public class AppOpenManager_Exclude implements Application.ActivityLifecycleCall
         Log.e("onActivityResumed", "="+activity);
 
         if(currentActivity != cu_next){
-            if(SharPerf.get_Tappx(activity).equals("1") ||SharPerf.get_Tappx(activity).equals("2")){
-                if (SharPerf.get_fb_i(activity).equals("id") || SharPerf.get_admob_i1(activity).equals("id")|| SharPerf.get_admob_i2(activity).equals("id")|| SharPerf.get_admob_i3(activity).equals("id") || SharPerf.getAC_Inter(activity).equals("id")) {
+            if(SharPerf.get_Tappx(activity).equals("1") || SharPerf.get_Tappx(activity).equals("2")){
+                if (SharPerf.get_fb_i(activity).equals("id") && SharPerf.get_admob_i1(activity).equals("id")&& SharPerf.get_admob_i2(activity).equals("id")&& SharPerf.get_admob_i3(activity).equals("id") && SharPerf.getAC_Inter(activity).equals("id")) {
                     Log.e("activity","="+activity);
                     Pizza.Interstial_Counted(activity);
                 }
@@ -108,10 +108,9 @@ public class AppOpenManager_Exclude implements Application.ActivityLifecycleCall
     @Override
     public void onActivityPaused(Activity activity) {
         Log.e("onActivityPaused", "="+activity);
-
         if(SharPerf.get_Tappx(activity).equals("0")){
             if(cu_next != activity){
-                if (SharPerf.get_fb_i(activity).equals("id") || SharPerf.get_admob_i1(activity).equals("id")|| SharPerf.get_admob_i2(activity).equals("id")|| SharPerf.get_admob_i3(activity).equals("id") || SharPerf.getAC_Inter(activity).equals("id")) {
+                if (SharPerf.get_fb_i(activity).equals("id") && SharPerf.get_admob_i1(activity).equals("id")&& SharPerf.get_admob_i2(activity).equals("id")&& SharPerf.get_admob_i3(activity).equals("id") && SharPerf.getAC_Inter(activity).equals("id")) {
                     Pizza.Interstial_Counted(activity);
                 }
             }
