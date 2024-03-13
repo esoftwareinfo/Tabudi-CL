@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:shimmer_auto_start="true"
+        app:shimmer_duration="1000">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_main_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            app:cardBackgroundColor="#505050"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:lines="1"
+                android:text="AD Loading..."
+                android:textColor="@color/gnt_white"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</merge>
