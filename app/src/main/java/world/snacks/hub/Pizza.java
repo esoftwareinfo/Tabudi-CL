@@ -864,7 +864,7 @@ public class Pizza {
                             SharPerf.set_admob_i1(code_context, admob_i1);
                             SharPerf.set_admob_i11(code_context, admob_i11);
                             SharPerf.set_admob_i2(code_context, admob_i2);
-                            SharPerf.set_admob_i2(code_context, admob_i22);
+                            SharPerf.set_admob_i22(code_context, admob_i22);
                             SharPerf.set_admob_i3(code_context, admob_i3);
                             SharPerf.set_admob_i33(code_context, admob_i33);
 
@@ -1720,7 +1720,7 @@ public class Pizza {
 
     public static Dialog open_ads_dialog;
     public static void AppOpen_Show(Activity activity) {
-        if (ao_ads.equals("0")) {
+        if (SharPerf.getAO_Setup(activity).equals("0")) {
 
         } else {
             Interstial_Show(activity);
